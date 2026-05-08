@@ -22,7 +22,7 @@ export default function BlogPage() {
 
       {/* POSTS */}
       <div className="posts-wrap">
-        <div className="posts-header rv">
+        <div className="posts-header">
           <span className="posts-count">{posts.length} {posts.length === 1 ? 'POST' : 'POSTS'}</span>
         </div>
 
@@ -31,8 +31,8 @@ export default function BlogPage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className={`post-card rv${i === 0 ? ' featured' : ''}`}
-              style={{ textDecoration: 'none', color: 'inherit', transitionDelay: `${i * 0.1}s` }}
+              className={`post-card${i === 0 ? ' featured' : ''}`}
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <div>
                 {i === 0 && <span className="featured-badge">Featured</span>}
@@ -54,7 +54,7 @@ export default function BlogPage() {
           ))}
 
           {/* Coming Soon card */}
-          <div className="post-card rv" style={{ transitionDelay: `${posts.length * 0.1}s` }}>
+          <div className="post-card">
             <div className="post-meta">
               <span className="post-date">Coming Soon</span>
               <span className="post-dot2" />
@@ -67,7 +67,7 @@ export default function BlogPage() {
         </div>
 
         {/* Newsletter */}
-        <div className="newsletter-box rv">
+        <div className="newsletter-box">
           <div>
             <div className="nl-title2">Get the thinking first.</div>
             <div className="nl-desc2">New posts, GTM breakdowns, and insights, directly to your inbox.</div>
