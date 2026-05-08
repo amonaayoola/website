@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --g: #c8a882;
+  --g2: #a8845e;
+  --bg: #0a0806;
+  --fg: #f4f0ea;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+::selection { background: rgba(200,168,130,.25); }
+::-webkit-scrollbar { width: 2px; background: #0a0806; }
+::-webkit-scrollbar-thumb { background: rgba(200,168,130,.3); }
+
+/* GRAIN */
+.grain {
+  position: absolute; inset: 0; opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px; pointer-events: none; z-index: 0;
+}
+
+/* SECTION TAG */
+.section-tag { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; }
+.section-tag-line { width: 40px; height: 1px; background: var(--g); opacity: .55; }
+.section-tag-text { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--g); }
+
+/* ANIMATIONS */
+@keyframes fu { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+@keyframes pulse { 0%,100% { opacity:.08; } 50% { opacity:.22; } }
+
+/* FOOTER */
+footer {
+  background: linear-gradient(135deg,#1c1209,#1a1108 60%,#201408);
+  border-top: 1px solid rgba(200,168,130,.12);
+  padding: 20px 44px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 8px;
+}
+.footer-name { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; color: rgba(244,240,234,.16); }
+.footer-copy { font-size: 11px; color: rgba(244,240,234,.1); letter-spacing: .04em; }
+
+/* WHISPER */
+.whisper { padding: 80px 44px; text-align: center; background: #0a0806; position: relative; overflow: hidden; }
+.whisper::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center,rgba(200,168,130,.05),transparent 70%); }
+.whisper p { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(16px,2.5vw,28px); color: rgba(244,240,234,.52); line-height: 1.58; max-width: 640px; margin: 0 auto; position: relative; z-index: 1; }
+.whisper-line { width: 40px; height: 1px; background: var(--g); opacity: .6; margin: 0 auto; }
+.whisper-line-top { margin-bottom: 24px; }
+.whisper-line-bottom { margin-top: 24px; }
+
+/* BUTTONS */
+.btn-primary { display: inline-flex; align-items: center; background: var(--g); color: var(--bg); border: none; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 14px 26px; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background .25s; }
+.btn-primary:hover { background: var(--g2); }
+.btn-ghost { display: inline-flex; align-items: center; background: rgba(10,8,6,.4); color: rgba(244,240,234,.6); border: 1px solid rgba(244,240,234,.18); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; padding: 14px 26px; cursor: pointer; font-family: 'DM Sans', sans-serif; backdrop-filter: blur(8px); transition: all .25s; }
+.btn-ghost:hover { border-color: var(--g); color: var(--g); }
+.btn-outline { display: inline-flex; align-items: center; gap: 12px; border: 1px solid var(--g); color: var(--g); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 16px 40px; transition: all .3s; background: rgba(10,8,6,.3); font-family: 'DM Sans', sans-serif; cursor: pointer; }
+.btn-outline:hover { background: var(--g); color: var(--bg); }
+
+/* TAGS */
+.tag-pill { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bg); background: var(--g); padding: 3px 10px; margin: 2px 3px 2px 0; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav { padding: 0 16px !important; top: 10px !important; }
+  footer { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 4px; }
+  .whisper { padding: 52px 20px; }
+}
