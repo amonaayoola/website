@@ -19,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Nav />
         <main>{children}</main>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:0.07});function init(){document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}})()` }} />
         <footer>
           <div className="footer-name">Amona Ayoola</div>
           <div className="footer-copy">© 2026 All Rights Reserved</div>
