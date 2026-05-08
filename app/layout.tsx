@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Amona Ayoola | Web3 Marketer & GTM Strategist",
@@ -18,8 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Nav />
+        <ScrollReveal />
         <main>{children}</main>
-        <script dangerouslySetInnerHTML={{ __html: `(function(){var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:0,rootMargin:'0px 0px 200px 0px'});function init(){document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}setTimeout(function(){document.querySelectorAll('.rv:not(.on)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight+400)el.classList.add('on')})},300)})()` }} />
         <footer>
           <div className="footer-name">Amona Ayoola</div>
           <div className="footer-copy">© 2026 All Rights Reserved</div>
