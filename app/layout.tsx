@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Nav />
         <main>{children}</main>
-        <script dangerouslySetInnerHTML={{ __html: `(function(){var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:0.07});function init(){document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}})()` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:0,rootMargin:'0px 0px 200px 0px'});function init(){document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}setTimeout(function(){document.querySelectorAll('.rv:not(.on)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight+400)el.classList.add('on')})},300)})()` }} />
         <footer>
           <div className="footer-name">Amona Ayoola</div>
           <div className="footer-copy">© 2026 All Rights Reserved</div>

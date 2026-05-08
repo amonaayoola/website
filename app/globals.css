@@ -99,6 +99,12 @@ footer {
 .newsletter-box { background: rgba(200,168,130,.04); border: 1px solid rgba(200,168,130,.1); padding: 52px 44px; margin-top: 72px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
 .nl-title2 { font-family: 'Playfair Display', serif; font-size: clamp(20px,2.5vw,30px); font-weight: 700; color: var(--fg); margin-bottom: 8px; }
 .nl-desc2 { font-size: 14px; color: rgba(244,240,234,.38); font-weight: 300; }
+.nl-form { display: flex; gap: 0; }
+.nl-input { flex: 1; background: rgba(10,8,6,.6); border: 1px solid rgba(244,240,234,.12); border-right: none; color: var(--fg); font-size: 13px; font-family: 'DM Sans', sans-serif; padding: 14px 18px; outline: none; transition: border-color .25s; min-width: 0; }
+.nl-input::placeholder { color: rgba(244,240,234,.22); }
+.nl-input:focus { border-color: rgba(200,168,130,.4); }
+.nl-btn { background: var(--g); color: var(--bg); border: none; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 14px 24px; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background .25s; white-space: nowrap; }
+.nl-btn:hover { background: var(--g2); }
 
 /* ===== POST PAGE ===== */
 .post-hero { padding: 130px 44px 72px; background: linear-gradient(160deg,#0d0a06,#141008 40%,#0a0806); border-bottom: 1px solid rgba(244,240,234,.06); position: relative; overflow: hidden; }
@@ -167,10 +173,14 @@ footer {
   .work-cards { grid-template-columns: 1fr !important; }
 
   /* Blog */
-  .blog-posts-grid { grid-template-columns: 1fr !important; }
-  .blog-featured { grid-column: 1 !important; }
-  .blog-header-section { padding: 100px 20px 52px !important; }
-  .blog-posts-section { padding: 52px 20px 80px !important; }
+  .posts-grid { grid-template-columns: 1fr !important; }
+  .post-card.featured { grid-template-columns: 1fr !important; grid-column: 1 !important; }
+  .posts-wrap { padding: 52px 20px 80px !important; }
+  .blog-header { padding: 100px 20px 52px !important; }
+  .newsletter-box { grid-template-columns: 1fr !important; padding: 36px 20px !important; }
+  .nl-form { flex-direction: column; }
+  .nl-input { border-right: 1px solid rgba(244,240,234,.12) !important; border-bottom: none; }
+  .nl-btn { width: 100%; }
 
   /* General sections */
   section[style*="padding: '100px 44px'"] { padding: 72px 20px !important; }
