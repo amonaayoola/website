@@ -7,7 +7,7 @@ const links = [
   { href: '/work', label: 'Work' },
   { href: '/about', label: 'About' },
   { href: '/connect', label: 'Connect' },
-  { href: 'https://blog.amonaayoola.com', label: 'Blog', external: true },
+  { href: '/blog', label: 'Blog' },
 ]
 
 export default function Nav() {
@@ -39,18 +39,11 @@ export default function Nav() {
         {links.map((l, i) => (
           <span key={l.href} style={{ display: 'contents' }}>
             {i > 0 && <div style={{ width: 1, height: 12, background: 'rgba(244,240,234,.1)', margin: '0 2px' }} />}
-            {l.external ? (
-              <a href={l.href} target="_blank" rel="noopener" style={{
-                fontSize: 10.5, letterSpacing: '.13em', textTransform: 'uppercase',
-                color: 'rgba(244,240,234,.36)', transition: 'color .25s', padding: '0 10px',
-              }}>{l.label}</a>
-            ) : (
-              <Link href={l.href} style={{
-                fontSize: 10.5, letterSpacing: '.13em', textTransform: 'uppercase',
-                color: pathname === l.href ? 'var(--g)' : 'rgba(244,240,234,.36)',
-                transition: 'color .25s', padding: '0 10px',
-              }}>{l.label}</Link>
-            )}
+            <Link href={l.href} style={{
+              fontSize: 10.5, letterSpacing: '.13em', textTransform: 'uppercase',
+              color: (pathname === l.href || (l.href !== '/' && pathname.startsWith(l.href))) ? 'var(--g)' : 'rgba(244,240,234,.36)',
+              transition: 'color .25s', padding: '0 10px',
+            }}>{l.label}</Link>
           </span>
         ))}
       </div>
