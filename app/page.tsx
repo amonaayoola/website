@@ -55,12 +55,12 @@ export default function Home() {
             display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-start',
             padding: '0 0 40px 36px',
           }}>
-            {/* Uncomment when you add your photo:
-            <img src="/photo.jpg" alt="Amona Ayoola" style={{
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/hero-photo.jpg" alt="Amona Ayoola" style={{
               position: 'absolute', inset: 0, width: '100%', height: '100%',
               objectFit: 'cover', objectPosition: 'center top',
               filter: 'contrast(1.04) brightness(.97)',
-            }} /> */}
+            }} />
             <div style={{
               position: 'absolute', inset: 0,
               background: 'linear-gradient(to right,transparent 55%,rgba(10,8,6,.7) 100%),linear-gradient(to top,rgba(10,8,6,.3) 0%,transparent 30%)',

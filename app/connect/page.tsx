@@ -15,6 +15,11 @@ export default function ConnectPage() {
           animation: 'pulse 5s ease-in-out infinite', pointerEvents: 'none',
         }} />
         <div style={{ position: 'relative', zIndex: 2 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/connect-photo.jpg" alt="Amona Ayoola" style={{
+            width: 82, height: 82, borderRadius: '50%', objectFit: 'cover', objectPosition: 'center 15%',
+            border: '2px solid rgba(200,168,130,.4)', margin: '0 auto 26px', display: 'block',
+          }} />
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: 'clamp(38px,6vw,86px)', fontWeight: 900,

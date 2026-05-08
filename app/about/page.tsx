@@ -71,8 +71,20 @@ export default function AboutPage() {
         padding: '100px 44px', position: 'relative', overflow: 'hidden',
       }}>
         <div className="grain" />
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'start', position: 'relative', zIndex: 2 }}>
-          {/* Left: bio */}
+        <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', position: 'relative', zIndex: 2 }}>
+          {/* Left: photo */}
+          <div style={{ position: 'relative', maxWidth: 440 }}>
+            <div style={{ position: 'absolute', inset: -1, border: '1px solid var(--g)', opacity: .2, transform: 'translate(8px,8px)', pointerEvents: 'none' }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/about-photo.jpg" alt="Amona Ayoola" style={{ width: '100%', display: 'block', objectFit: 'cover', aspectRatio: '3/4' }} />
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(10,8,6,.65) 0%,transparent 45%)', pointerEvents: 'none' }} />
+            <div style={{ position: 'absolute', bottom: 24, left: 24 }}>
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: 'var(--fg)', letterSpacing: '-.02em' }}>Amona Ayoola</div>
+              <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginTop: 4 }}>Web3 Marketer & GTM Strategist</div>
+            </div>
+          </div>
+
+          {/* Right: bio + stats */}
           <div>
             <h2 style={{
               fontFamily: "'Playfair Display', serif",
@@ -85,12 +97,19 @@ export default function AboutPage() {
               I&apos;m Amona Ayoola, a Web3 marketer and go-to-market strategist who has spent the last six years inside blockchain ecosystems: launching products, building communities, writing narratives that convert, and closing sales one conversation at a time.
             </p>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              At Ri-Mark, the agency I founded, we grossed close to <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>$200K over two years</strong> building content and GTM systems for Web3 founders. I grew a client&apos;s X account from <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>30K to 120K followers in 90 days</strong>. The same playbook took another from 50K to 150K+. At Nirvana Academy, I personally sold tickets for <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>two sold-out Web3 events</strong> through direct outreach: DMs, calls, follow-ups, zero ad spend.
+              At Ri-Mark, the agency I founded, we grossed close to <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>$200K over two years</strong>. Grew a client&apos;s X from <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>30K to 120K in 90 days</strong>. Sold out two Web3 events through direct outreach alone.
             </p>
-            <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              I founded <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>ZeroPulse</strong> and currently lead GTM for <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Decane Wallet</strong>. My speciality is GTM strategy that works without a massive budget behind it.
-            </p>
-            <div style={{ marginTop: 32 }}>
+            <div style={{ marginTop: 26 }}>
+              {/* Testimonial row */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px', border: '1px solid rgba(244,240,234,.07)', background: 'rgba(255,255,255,.02)', marginBottom: 24 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/testimonial-photo.jpg" alt="" style={{ width: 68, height: 68, objectFit: 'cover', objectPosition: 'center 20%', borderRadius: '50%', border: '1px solid rgba(200,168,130,.3)', flexShrink: 0 }} />
+                <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.38)', fontStyle: 'italic', lineHeight: 1.5 }}>
+                  &ldquo;Amona doesn&apos;t just talk strategy — she executes. <strong style={{ color: 'var(--g)', fontStyle: 'normal', fontWeight: 500 }}>Results speak.</strong>&rdquo;
+                </p>
+              </div>
+            </div>
+            <div style={{ marginTop: 8 }}>
               <Link href="/connect" className="btn-primary">Work Together</Link>
             </div>
           </div>
