@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -71,7 +71,49 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  nav { padding: 0 16px !important; top: 10px !important; }
+  /* Nav */
+  nav { padding: 0 !important; top: 10px !important; left: 16px !important; right: 16px !important; width: auto !important; justify-content: center !important; }
+  nav > div { padding: 8px 12px !important; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  nav > div::-webkit-scrollbar { display: none; }
+
+  /* Hero: stack to single column */
+  .hero-section { height: auto !important; min-height: 100svh !important; grid-template-columns: 1fr !important; grid-template-rows: 50vh auto !important; }
+  .hero-left { height: 50vh; }
+  .hero-right { padding: 32px 20px 48px !important; justify-content: flex-start !important; }
+
+  /* Stats */
+  .stats-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; border-top: none !important; }
+  .stat-cell { padding: 32px 0 !important; padding-left: 0 !important; border-right: none !important; border-bottom: 1px solid rgba(244,240,234,.08); }
+  .stat-cell:last-child { border-bottom: none; }
+
+  /* Services */
+  .services-section { padding: 72px 20px !important; }
+  .service-row { grid-template-columns: 36px 1fr !important; gap: 16px !important; padding: 32px 0 !important; }
+
+  /* Footer */
   footer { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 4px; }
+
+  /* Whisper */
   .whisper { padding: 52px 20px; }
+  .whisper p { font-size: clamp(14px,4vw,20px); }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+
+  /* Work cards */
+  .work-cards { grid-template-columns: 1fr !important; }
+
+  /* Blog */
+  .blog-posts-grid { grid-template-columns: 1fr !important; }
+  .blog-featured { grid-column: 1 !important; }
+  .blog-header-section { padding: 100px 20px 52px !important; }
+  .blog-posts-section { padding: 52px 20px 80px !important; }
+
+  /* General sections */
+  section[style*="padding: '100px 44px'"] { padding: 72px 20px !important; }
+}
+
+@media (max-width: 480px) {
+  nav > div { padding: 7px 10px !important; }
+  nav > div a, nav > div span a { font-size: 9px !important; padding: 0 6px !important; }
 }

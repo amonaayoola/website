@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Stars from '@/components/Stars'
 
 export default function Home() {
   return (
@@ -9,9 +10,21 @@ export default function Home() {
         display: 'grid', gridTemplateColumns: '42% 1fr',
         background: 'linear-gradient(160deg,#1a1108,#241608 25%,#1c1209 50%,#120d06 75%,#0e0a05)',
         overflow: 'hidden', position: 'relative',
-      }}>
+      }} className="hero-section">
         <div className="grain" />
-        {/* Glow */}
+
+        {/* Hero texture overlays */}
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
+          backgroundImage: 'repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(200,168,130,.012) 2px,rgba(200,168,130,.012) 4px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(200,168,130,.008) 3px,rgba(200,168,130,.008) 6px)',
+          backgroundSize: '6px 4px',
+        }} />
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none',
+          background: 'radial-gradient(ellipse at 20% 80%,rgba(200,168,130,.08) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(180,140,100,.06) 0%,transparent 40%)',
+        }} />
+
+        {/* Pulsing glow */}
         <div style={{
           position: 'absolute', top: '30%', left: '35%',
           transform: 'translate(-50%,-50%)', width: 800, height: 900,
@@ -19,6 +32,7 @@ export default function Home() {
           background: 'radial-gradient(ellipse at 50% 30%,rgba(200,168,130,.22) 0%,rgba(200,168,130,.08) 40%,transparent 70%)',
           animation: 'pulse 4s ease-in-out infinite', pointerEvents: 'none', zIndex: 2,
         }} />
+
         {/* Ghost text */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%',
@@ -29,24 +43,34 @@ export default function Home() {
           whiteSpace: 'nowrap', userSelect: 'none', zIndex: 1, letterSpacing: '-.04em',
         }}>AMONA</div>
 
-        {/* Left: photo placeholder */}
-        <div style={{
-          position: 'relative', zIndex: 5, overflow: 'hidden',
-          background: 'linear-gradient(135deg,#1a1108,#0e0a05)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>
+        {/* Stars */}
+        <Stars />
+
+        {/* Left: photo */}
+        <div className="hero-left" style={{ position: 'relative', zIndex: 5, overflow: 'hidden' }}>
+          {/* Photo placeholder — replace src with your actual photo */}
           <div style={{
             width: '100%', height: '100%',
-            background: 'linear-gradient(160deg,rgba(200,168,130,.05),transparent)',
-          }} />
-          <div style={{
-            position: 'absolute', inset: 0,
-            background: 'linear-gradient(to right,transparent 55%,rgba(10,8,6,.7) 100%)',
-          }} />
+            background: 'linear-gradient(160deg,#1e1508 0%,#120d06 60%,#0a0806 100%)',
+            display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-start',
+            padding: '0 0 40px 36px',
+          }}>
+            {/* Uncomment when you add your photo:
+            <img src="/photo.jpg" alt="Amona Ayoola" style={{
+              position: 'absolute', inset: 0, width: '100%', height: '100%',
+              objectFit: 'cover', objectPosition: 'center top',
+              filter: 'contrast(1.04) brightness(.97)',
+            }} /> */}
+            <div style={{
+              position: 'absolute', inset: 0,
+              background: 'linear-gradient(to right,transparent 55%,rgba(10,8,6,.7) 100%),linear-gradient(to top,rgba(10,8,6,.3) 0%,transparent 30%)',
+              pointerEvents: 'none',
+            }} />
+          </div>
         </div>
 
         {/* Right: text */}
-        <div style={{
+        <div className="hero-right" style={{
           position: 'relative', zIndex: 5,
           display: 'flex', flexDirection: 'column', justifyContent: 'center',
           padding: '100px 60px 80px 48px',
@@ -85,7 +109,7 @@ export default function Home() {
         </div>
 
         {/* Scroll hint */}
-        <div style={{
+        <div id="sh" style={{
           position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)',
           display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
           opacity: .4, zIndex: 6,
@@ -101,7 +125,7 @@ export default function Home() {
         position: 'relative', overflow: 'hidden',
       }}>
         <div className="grain" />
-        <div style={{
+        <div className="stats-grid" style={{
           display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
           padding: '0 44px', borderTop: '1px solid rgba(244,240,234,.07)',
           position: 'relative', zIndex: 2,
@@ -111,7 +135,7 @@ export default function Home() {
             { value: '90 days', sub: 'Organic growth. Compounded impressions. No paid spend.' },
             { value: '~1,000+', sub: 'Pre-launch waitlist signups. Minimal spend.' },
           ].map((s, i) => (
-            <div key={i} style={{
+            <div key={i} className="stat-cell" style={{
               padding: '52px 0',
               paddingLeft: i > 0 ? 38 : 0,
               borderRight: i < 2 ? '1px solid rgba(244,240,234,.08)' : 'none',
@@ -135,11 +159,11 @@ export default function Home() {
         <div className="whisper-line whisper-line-bottom" />
       </section>
 
-      {/* SERVICES TEASER */}
+      {/* SERVICES */}
       <section style={{
         background: 'linear-gradient(120deg,#0d0b08,#181410 50%,#0c0a07)',
         padding: '100px 44px', position: 'relative', overflow: 'hidden',
-      }}>
+      }} className="services-section">
         <div className="grain" />
         <div style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-tag">
@@ -152,7 +176,7 @@ export default function Home() {
             { n: '03', title: 'Community Building', acc: 'Members become marketers.', desc: 'I build communities where members become advocates and advocates become your best marketers. Sold out two paid Web3 events through DMs, calls, and one-on-one outreach alone.' },
             { n: '04', title: 'One-on-One Sales', acc: 'Zero dollar. Real closes.', desc: "I've personally DMed over 1,000 prospects and closed paid event registrations one conversation at a time. Cold inbox to paid ticket. That's the funnel." },
           ].map((w) => (
-            <div key={w.n} style={{
+            <div key={w.n} className="service-row" style={{
               display: 'grid', gridTemplateColumns: '50px 1fr', gap: 30,
               padding: '42px 0', borderTop: '1px solid rgba(244,240,234,.08)', alignItems: 'start',
             }}>
