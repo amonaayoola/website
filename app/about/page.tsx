@@ -2,6 +2,12 @@ import Link from 'next/link'
 
 const experience = [
   {
+    role: 'Founder & GTM Lead',
+    company: 'Ri-Mark',
+    period: '2022 – 2026',
+    desc: 'Founded and grew a Web3 marketing agency to ~$200K revenue over two years. Built GTM systems for Web3 founders, grew client X accounts (30K→120K in 90 days, 50K→150K+), and ran community and content operations. No paid acquisition.',
+  },
+  {
     role: 'Chief Marketing Officer',
     company: 'Nirvana Academy',
     period: '2023 – Present',
@@ -24,12 +30,6 @@ const experience = [
     company: 'Decane Wallet',
     period: '2025 – Present',
     desc: 'Full GTM architecture for a non-custodial Web3 wallet. Brand strategy, pre-launch sprint, trader outreach playbook, and launch execution. Not the founder, but I ship like one.',
-  },
-  {
-    role: 'Founder & GTM Lead',
-    company: 'Ri-Mark',
-    period: '2022 – 2026',
-    desc: 'Founded and grew a Web3 marketing agency to ~$200K revenue over two years. Built GTM systems for Web3 founders, grew client X accounts (30K→120K in 90 days, 50K→150K+), and ran community and content operations. No paid acquisition.',
   },
   {
     role: 'Content Creator',
