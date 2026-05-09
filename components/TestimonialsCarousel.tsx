@@ -68,8 +68,8 @@ export default function TestimonialsCarousel({ inline }: { inline?: boolean }) {
   const inner = (
     <>
       {/* Card stage */}
-      <div style={{ position: 'relative', height: 300, overflow: 'hidden', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ position: 'relative', width: 'min(780px, 92vw)' }}>
+      <div style={{ position: 'relative', height: 180, overflow: 'hidden', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: 'min(560px, 86vw)' }}>
           {TESTIMONIALS.map((t, i) => {
             const slot = slotOf(i)
             return (
@@ -125,7 +125,7 @@ export default function TestimonialsCarousel({ inline }: { inline?: boolean }) {
   return (
     <section style={{
       background: 'linear-gradient(120deg,#0d0b08,#181410 50%,#0c0a07)',
-      padding: '40px 44px 44px', position: 'relative', overflow: 'hidden',
+      padding: '32px 44px 36px', position: 'relative', overflow: 'hidden',
     }}>
       <div className="grain" />
       <div style={{ position: 'relative', zIndex: 2 }}>
@@ -146,21 +146,21 @@ function QuoteBlock({ t, active }: { t: typeof TESTIMONIALS[0], active?: boolean
     <div style={{
       background: active ? 'rgba(200,168,130,.04)' : 'transparent',
       border: active ? '1px solid rgba(200,168,130,.12)' : '1px solid transparent',
-      padding: active ? 44 : 20,
+      padding: active ? 24 : 14,
       position: 'relative',
     }}>
       <div style={{
         fontFamily: "'Playfair Display', serif",
-        fontSize: 44, lineHeight: 1, color: 'var(--g)', opacity: .15,
-        position: 'absolute', top: 8, left: active ? 16 : 8,
+        fontSize: 32, lineHeight: 1, color: 'var(--g)', opacity: .15,
+        position: 'absolute', top: 6, left: active ? 12 : 6,
         pointerEvents: 'none', userSelect: 'none',
       }}>&ldquo;</div>
 
       <p style={{
-        fontSize: active ? 17 : 12, fontWeight: 300,
+        fontSize: active ? 13 : 11, fontWeight: 300,
         lineHeight: 1.76, color: active ? 'rgba(244,240,234,.68)' : 'rgba(244,240,234,.36)',
-        fontStyle: 'italic', marginBottom: 14,
-        position: 'relative', zIndex: 1, paddingTop: 10,
+        fontStyle: 'italic', marginBottom: 10,
+        position: 'relative', zIndex: 1, paddingTop: 8,
       }}>{t.quote}</p>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
