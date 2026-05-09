@@ -154,7 +154,8 @@ footer {
   /* Hero: stack to single column */
   .hero-section { height: auto !important; min-height: 100svh !important; grid-template-columns: 1fr !important; grid-template-rows: 50vh auto !important; }
   .hero-left { height: 50vh; }
-  .hero-right { padding: 32px 20px 48px !important; justify-content: flex-start !important; }
+  .hero-right { padding: 32px 20px 80px !important; justify-content: flex-start !important; }
+  #sh { position: fixed !important; bottom: 20px !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 99 !important; }
 
   /* Stats */
   .stats-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; border-top: none !important; }
