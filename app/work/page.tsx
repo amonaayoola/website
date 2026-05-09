@@ -83,7 +83,7 @@ function Card({ c }: { c: typeof building[0] }) {
   const shortDesc = c.desc.split('.')[0] + '.'
 
   return (
-    <div style={{
+    <div className="work-card-inner" style={{
       background: 'rgba(14,10,7,.94)', border: '1px solid rgba(244,240,234,.07)',
       padding: 36, position: 'relative', overflow: 'hidden',
     }}>
@@ -157,7 +157,7 @@ export default function WorkPage() {
       </section>
 
       {/* PRODUCTS I'M BUILDING */}
-      <section style={{
+      <section className="work-section" style={{
         background: 'linear-gradient(150deg,#0f0d09,#1c1610 40%,#0a0806)',
         padding: '52px 44px 36px', position: 'relative', overflow: 'hidden',
       }}>
@@ -167,7 +167,7 @@ export default function WorkPage() {
             <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 8 }}>Products I&apos;m Building</div>
             <div style={{ width: 32, height: 1, background: 'var(--g)', opacity: .4 }} />
           </div>
-          <div style={{
+          <div className="work-cards" style={{
             display: 'grid', gridTemplateColumns: 'repeat(2,1fr)',
             gap: 2,
           }}>
@@ -177,7 +177,7 @@ export default function WorkPage() {
       </section>
 
       {/* PRODUCTS I'M MARKETING */}
-      <section style={{
+      <section className="work-section" style={{
         background: 'linear-gradient(150deg,#0c0a07,#181410 40%,#0a0806)',
         padding: '36px 44px 80px', position: 'relative', overflow: 'hidden',
         borderTop: '1px solid rgba(244,240,234,.06)',
@@ -188,7 +188,7 @@ export default function WorkPage() {
             <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 8 }}>Products I&apos;m Marketing</div>
             <div style={{ width: 32, height: 1, background: 'var(--g)', opacity: .4 }} />
           </div>
-          <div style={{
+          <div className="work-cards" style={{
             display: 'grid', gridTemplateColumns: 'repeat(2,1fr)',
             gap: 2,
           }}>

@@ -178,10 +178,12 @@ footer {
   .exp-grid-mobile { display: block !important; }
 
   /* Work cards */
-  .work-cards { grid-template-columns: 1fr !important; }
+  .work-section { padding: 36px 16px !important; }
+  .work-cards { grid-template-columns: 1fr !important; gap: 12px !important; }
   .card-desc-full { display: none !important; }
   .card-desc-short { display: block !important; }
   .card-tags { display: none !important; }
+  .work-card-inner { padding: 24px 20px !important; }
 
   /* Blog */
   .posts-grid { grid-template-columns: 1fr !important; }
