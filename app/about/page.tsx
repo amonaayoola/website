@@ -162,7 +162,8 @@ export default function AboutPage() {
             <div className="section-tag-line" />
             <div className="section-tag-text">Chapter 05.5 / Experience</div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+          {/* Desktop: full grid */}
+          <div className="exp-grid-full" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
             {experience.map((e, i) => (
               <div key={e.company + i} style={{
                 padding: '32px 28px',
@@ -177,6 +178,28 @@ export default function AboutPage() {
                 <div style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.75, color: 'rgba(244,240,234,.44)' }}>{e.desc}</div>
               </div>
             ))}
+          </div>
+
+          {/* Mobile: condensed list with Read More */}
+          <div className="exp-grid-mobile" style={{ display: 'none' }}>
+            {experience.map((e, i) => (
+              <div key={e.company + i} style={{
+                padding: '18px 0',
+                borderBottom: '1px solid rgba(244,240,234,.07)',
+                display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12,
+              }}>
+                <div>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, fontWeight: 700, color: 'var(--fg)', marginBottom: 2 }}>{e.company}</div>
+                  <div style={{ fontSize: 10, color: 'var(--g)', letterSpacing: '.08em', textTransform: 'uppercase' }}>{e.role}</div>
+                  <div style={{ fontSize: 10, color: 'rgba(244,240,234,.28)', marginTop: 2 }}>{e.period}</div>
+                </div>
+              </div>
+            ))}
+            <div style={{ marginTop: 24 }}>
+              <Link href="/about/experience" style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--g)', textDecoration: 'none' }}>
+                Full Experience →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

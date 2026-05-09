@@ -79,6 +79,9 @@ const marketing = [
 ]
 
 function Card({ c }: { c: typeof building[0] }) {
+  // Truncate desc to first sentence for mobile
+  const shortDesc = c.desc.split('.')[0] + '.'
+
   return (
     <div style={{
       background: 'rgba(14,10,7,.94)', border: '1px solid rgba(244,240,234,.07)',
@@ -97,11 +100,15 @@ function Card({ c }: { c: typeof building[0] }) {
         )}
       </div>
       <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(18px,2vw,26px)', fontWeight: 700, color: 'var(--fg)', marginBottom: 16 }}>{c.title}</h2>
-      <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.46)', lineHeight: 1.72, marginBottom: 12 }}>{c.desc}</p>
-      {c.role && <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.38)', lineHeight: 1.72, marginBottom: 12 }}>{c.role}</p>}
+
+      {/* Full desc — hidden on mobile */}
+      <p className="card-desc-full" style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.46)', lineHeight: 1.72, marginBottom: 12 }}>{c.desc}</p>
+      {/* Short desc — shown on mobile only */}
+      <p className="card-desc-short" style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.46)', lineHeight: 1.72, marginBottom: 8 }}>{shortDesc}</p>
+
       {c.tags.length > 0 && (
-        <div style={{ marginBottom: 4 }}>
-          {c.tags.map(t => <span key={t} className="tag-pill">{t}</span>)}
+        <div className="card-tags" style={{ marginBottom: 4 }}>
+          {c.tags.slice(0, 2).map(t => <span key={t} className="tag-pill">{t}</span>)}
         </div>
       )}
       {c.link ? (

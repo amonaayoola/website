@@ -1,7 +1,7 @@
 ---
 title: "What if your health data was yours, and it paid you?"
 date: "2026-01-15"
-category: "Opinion · Thought Experiment"
+category: "Work"
 excerpt: "The global market for health data is worth tens of billions of dollars. You are the product. And you receive nothing. Here's a concept that changes that."
 readTime: "5 min read"
 ---

@@ -21,6 +21,14 @@ a { text-decoration: none; color: inherit; }
 ::-webkit-scrollbar { width: 2px; background: #0a0806; }
 ::-webkit-scrollbar-thumb { background: rgba(200,168,130,.3); }
 
+/* Work card mobile truncation */
+.card-desc-short { display: none; }
+.card-desc-full  { display: block; }
+
+/* Experience grid toggle */
+.exp-grid-full   { display: grid !important; }
+.exp-grid-mobile { display: none !important; }
+
 /* GRAIN */
 .grain {
   position: absolute; inset: 0; opacity: .035;
@@ -166,9 +174,14 @@ footer {
 
   /* About */
   .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .exp-grid-full   { display: none !important; }
+  .exp-grid-mobile { display: block !important; }
 
   /* Work cards */
   .work-cards { grid-template-columns: 1fr !important; }
+  .card-desc-full { display: none !important; }
+  .card-desc-short { display: block !important; }
+  .card-tags { display: none !important; }
 
   /* Blog */
   .posts-grid { grid-template-columns: 1fr !important; }

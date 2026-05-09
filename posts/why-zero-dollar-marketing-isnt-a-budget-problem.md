@@ -1,7 +1,7 @@
 ---
 title: "Why Zero-Dollar Marketing Isn't a Budget Problem, It's a Discipline Problem"
 date: "2026-03-01"
-category: "GTM Strategy"
+category: "Work"
 excerpt: "Every founder I talk to frames zero-budget marketing as a constraint. That framing is completely wrong. Zero-dollar marketing isn't about the absence of money. It's about the presence of a specific kind of discipline most marketers have never been forced to develop."
 readTime: "6 min read"
 ---
