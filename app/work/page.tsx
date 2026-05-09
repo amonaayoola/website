@@ -68,13 +68,13 @@ export default function WorkPage() {
             fontSize: 'clamp(44px,7vw,96px)', fontWeight: 900, lineHeight: .88,
             letterSpacing: '-.04em', color: 'var(--fg)', marginBottom: 24, animation: 'fu .85s .2s both',
           }}>
-            GTM<br /><em style={{ color: 'var(--g)', fontStyle: 'normal' }}>Series.</em>
+            Product<br /><em style={{ color: 'var(--g)', fontStyle: 'normal' }}>Marketing.</em>
           </h1>
           <p style={{
             fontSize: 16, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.5)',
             maxWidth: 560, animation: 'fu .7s .36s both', marginBottom: 16,
           }}>
-            One live product. Three hypotheticals built to the same standard. Real decisions, not slide decks.
+            GTM work from products I&apos;ve shipped or led. One live product. Three hypotheticals built to the same standard because thinking rigorously about problems you don&apos;t own is still useful.
           </p>
         </div>
       </section>

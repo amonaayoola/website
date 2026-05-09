@@ -2,6 +2,24 @@ import Link from 'next/link'
 
 const experience = [
   {
+    role: 'Founder',
+    company: 'Myndzprint',
+    period: '2024 – Present',
+    desc: 'Building an AI minds platform that lets you have conversations with any thinker — historical figures, domain experts, or yourself. Doing the product, the GTM, and the community simultaneously.',
+  },
+  {
+    role: 'Founder',
+    company: 'Raxus',
+    period: '2025 – Present',
+    desc: 'Building a real estate product for the Nigerian market. Early stage. The problem is clear; the product is in motion.',
+  },
+  {
+    role: 'Product Marketing Lead',
+    company: 'Decane Wallet',
+    period: '2025 – Present',
+    desc: 'Full GTM architecture for a non-custodial Web3 wallet. Brand strategy, pre-launch sprint, trader outreach playbook, and launch execution. Not the founder — but I ship like one.',
+  },
+  {
     role: 'Founder & GTM Lead',
     company: 'Ri-Mark',
     period: '2022 – 2024',
@@ -18,12 +36,6 @@ const experience = [
     company: 'ZeroPulse',
     period: '2024 – Present',
     desc: 'Web3-native marketing consultancy focused on zero-budget GTM. Built for founders who need traction before they have the budget to buy it.',
-  },
-  {
-    role: 'GTM Lead (Side Project)',
-    company: 'Decane Wallet',
-    period: '2025 – Present',
-    desc: 'Full GTM architecture for a non-custodial Web3 wallet. Brand strategy, pre-launch sprint, trader outreach playbook, and launch execution.',
   },
   {
     role: 'Content Creator',
@@ -60,7 +72,7 @@ export default function AboutPage() {
             Amona<br /><em style={{ color: 'var(--g)', fontStyle: 'italic' }}>Ayoola.</em>
           </h1>
           <p style={{ fontSize: 16, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.5)', maxWidth: 560 }}>
-            Web3 marketer and go-to-market strategist. Six years inside blockchain ecosystems.
+            Builder and product marketer. I build products, run GTM, and write about what I learn doing both.
           </p>
         </div>
       </section>
@@ -80,7 +92,7 @@ export default function AboutPage() {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(10,8,6,.65) 0%,transparent 45%)', pointerEvents: 'none' }} />
             <div style={{ position: 'absolute', bottom: 24, left: 24 }}>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: 'var(--fg)', letterSpacing: '-.02em' }}>Amona Ayoola</div>
-              <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginTop: 4 }}>Web3 Marketer & GTM Strategist</div>
+              <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginTop: 4 }}>Builder · Product Marketer · Writer</div>
             </div>
           </div>
 
@@ -91,13 +103,13 @@ export default function AboutPage() {
               fontSize: 'clamp(26px,3.5vw,48px)', fontWeight: 700,
               letterSpacing: '-.03em', lineHeight: 1.02, marginBottom: 26, color: 'var(--fg)',
             }}>
-              Six years building<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>in Web3.</em>
+              I build products.<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>I market them too.</em>
             </h2>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              I&apos;m Amona Ayoola, a Web3 marketer and go-to-market strategist who has spent the last six years inside blockchain ecosystems: launching products, building communities, writing narratives that convert, and closing sales one conversation at a time.
+              I&apos;m Amona Ayoola — builder, product marketer, and writer. I&apos;ve spent six years inside Web3: building products, running GTM from zero, and writing about what actually happens behind the scenes.
             </p>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              At Ri-Mark, the agency I founded, we grossed close to <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>$200K over two years</strong>. Grew a client&apos;s X from <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>30K to 120K in 90 days</strong>. Sold out two Web3 events through direct outreach alone.
+              Currently building <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Myndzprint</strong> (AI minds platform) and <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Raxus</strong> (real estate, Nigeria). Leading GTM for <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Decane Wallet</strong>. I write about the decisions and the failures — not the highlight reel.
             </p>
             <div style={{ marginTop: 26 }}>
               {/* Testimonial row */}
@@ -141,7 +153,7 @@ export default function AboutPage() {
       {/* WHISPER */}
       <section className="whisper">
         <div className="whisper-line whisper-line-top" />
-        <p>If you&apos;re a Web3 founder who needs traction, a product team planning a launch, or a firm looking for a marketer who actually understands crypto, let&apos;s talk.</p>
+        <p>Most people separate building from marketing. I never learned how to do that.</p>
         <div className="whisper-line whisper-line-bottom" />
       </section>
 

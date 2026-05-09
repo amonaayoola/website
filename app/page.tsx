@@ -79,14 +79,14 @@ export default function Home() {
             fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase',
             color: 'var(--g)', marginBottom: 24, animation: 'fu .6s .1s both',
           }}>
-            Web3 Marketer · GTM Strategist
+            Builder · Product Marketer · Writer
           </div>
           <div style={{
             fontFamily: "'Playfair Display', serif", fontStyle: 'italic',
             fontSize: 'clamp(14px,1.8vw,22px)', color: 'rgba(244,240,234,.52)',
             lineHeight: 1.5, marginBottom: 16, animation: 'fu .7s .28s both',
           }}>
-            Most marketers talk about growth.
+            I don&apos;t just market products.
           </div>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
@@ -94,17 +94,17 @@ export default function Home() {
             lineHeight: .88, letterSpacing: '-.04em', color: 'var(--fg)',
             marginBottom: 32, animation: 'fu .85s .44s both',
           }}>
-            I build it<br /><em style={{ color: 'var(--g)', fontStyle: 'normal' }}>in public.</em>
+            I build them<br /><em style={{ color: 'var(--g)', fontStyle: 'normal' }}>from scratch.</em>
           </h1>
           <p style={{
             fontSize: 15, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.5)',
             marginBottom: 32, maxWidth: 380, animation: 'fu .7s .58s both',
           }}>
-            Grew a client&apos;s X account from 30K to 120K in 90 days. Organic only. Ran the same playbook: 50K to 150K+. Grossed $200K at Ri-Mark. Sold out two Web3 events.
+            Building Myndzprint and Raxus. Running GTM for Decane Wallet. Writing about the decisions, the failures, and what actually works.
           </p>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', animation: 'fu .7s .68s both' }}>
-            <Link href="/work" className="btn-primary">See the Work</Link>
-            <Link href="/connect" className="btn-ghost">Get in Touch</Link>
+            <Link href="/work" className="btn-primary">See What I&apos;m Building</Link>
+            <Link href="/blog" className="btn-ghost">Read the Notebook</Link>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ export default function Home() {
         <div className="whisper-line whisper-line-bottom" />
       </section>
 
-      {/* SERVICES */}
+      {/* BUILDING */}
       <section style={{
         background: 'linear-gradient(120deg,#0d0b08,#181410 50%,#0c0a07)',
         padding: '100px 44px', position: 'relative', overflow: 'hidden',
@@ -168,7 +168,81 @@ export default function Home() {
         <div style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-tag">
             <div className="section-tag-line" />
-            <div className="section-tag-text">Chapter 02 / What I Do</div>
+            <div className="section-tag-text">Chapter 02 / What I&apos;m Building</div>
+          </div>
+          {[
+            { n: '01', title: 'Myndzprint', acc: 'Live.', href: 'https://myndzprint.com', desc: 'AI minds platform. Build a version of any thinker — historical figures, yourself, domain experts — and have conversations with them. I built this because I wanted to think alongside people I couldn\'t reach.' },
+            { n: '02', title: 'Raxus', acc: 'In progress.', href: null, desc: 'A real estate product built for the Nigerian market. Early stage. The problem is real; the solution is in motion.' },
+            { n: '03', title: 'Decane Wallet', acc: 'GTM Lead.', href: null, desc: 'Non-custodial Web3 wallet. I\'m the product marketer — brand strategy, pre-launch sprint, trader outreach playbook, and launch execution. Not the founder, but I ship like one.' },
+          ].map((w) => (
+            <div key={w.n} className="service-row" style={{
+              display: 'grid', gridTemplateColumns: '50px 1fr', gap: 30,
+              padding: '42px 0', borderTop: '1px solid rgba(244,240,234,.08)', alignItems: 'start',
+            }}>
+              <div style={{ fontSize: 11, color: 'var(--g)', opacity: .5, letterSpacing: '.08em', paddingTop: 5 }}>{w.n}</div>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, flexWrap: 'wrap' }}>
+                  {w.href ? (
+                    <a href={w.href} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(22px,3vw,40px)', fontWeight: 700, letterSpacing: '-.025em', lineHeight: 1, color: 'var(--fg)', textDecoration: 'none' }}>{w.title}</a>
+                  ) : (
+                    <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(22px,3vw,40px)', fontWeight: 700, letterSpacing: '-.025em', lineHeight: 1, color: 'var(--fg)' }}>{w.title}</span>
+                  )}
+                  <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--g)', opacity: .8 }}>{w.acc}</span>
+                </div>
+                <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.76, color: 'rgba(244,240,234,.44)', maxWidth: 580, marginTop: 8 }}>{w.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* PODCAST */}
+      <section style={{
+        background: 'linear-gradient(135deg,#0a0806,#141008 50%,#0d0b08)',
+        padding: '72px 44px', position: 'relative', overflow: 'hidden',
+        borderTop: '1px solid rgba(244,240,234,.06)',
+      }}>
+        <div className="grain" />
+        <div style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center', gap: 52, flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 300px' }}>
+            <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 16 }}>Now Airing</div>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900,
+              letterSpacing: '-.04em', lineHeight: .92, color: 'var(--fg)', marginBottom: 16,
+            }}>
+              Decentralized<br /><em style={{ color: 'var(--g)' }}>Opinions.</em>
+            </h2>
+            <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.44)', maxWidth: 420, marginBottom: 28 }}>
+              A podcast about building in Web3 — the real decisions, the hard pivots, the things that don&apos;t make it into the press release.
+            </p>
+            <a href="https://x.com/decopinions" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.261 5.632 5.903-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Follow on X
+            </a>
+          </div>
+          <div style={{
+            flex: '0 0 auto', width: 180, height: 180,
+            border: '1px solid rgba(200,168,130,.15)',
+            background: 'radial-gradient(ellipse at 30% 30%,rgba(200,168,130,.08),transparent 60%)',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 10,
+          }}>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--g)" strokeWidth="1.5" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="var(--g)" stroke="none"/></svg>
+            <div style={{ fontSize: 10, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(200,168,130,.5)', textAlign: 'center', lineHeight: 1.5 }}>Decentralized<br />Opinions</div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT I DO */}
+      <section style={{
+        background: 'linear-gradient(120deg,#0f0d09,#1a1610 50%,#0c0a07)',
+        padding: '100px 44px', position: 'relative', overflow: 'hidden',
+      }}>
+        <div className="grain" />
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <div className="section-tag">
+            <div className="section-tag-line" />
+            <div className="section-tag-text">Chapter 03 / How I Help</div>
           </div>
           {[
             { n: '01', title: 'Go-To-Market Strategy', acc: 'From first principles.', desc: 'Pre-launch, launch, and post-launch playbooks built for crypto and DeFi products. Customer journey mapping, waitlist building, and community-driven growth, organic-first, always.' },
@@ -196,7 +270,7 @@ export default function Home() {
       {/* WHISPER 2 */}
       <section className="whisper">
         <div className="whisper-line whisper-line-top" />
-        <p>The best GTM strategy isn&apos;t the most creative one. It&apos;s the one that finds people who are already angry and gives them something to believe in.</p>
+        <p>The best product marketing isn&apos;t the most creative. It&apos;s the kind that only comes from someone who&apos;s actually in the build.</p>
         <div className="whisper-line whisper-line-bottom" />
       </section>
 
@@ -214,14 +288,14 @@ export default function Home() {
             fontSize: 'clamp(32px,5vw,64px)', fontWeight: 900,
             letterSpacing: '-.04em', lineHeight: .92, color: 'var(--fg)', marginBottom: 20,
           }}>
-            Ready to build<br /><em style={{ color: 'var(--g)' }}>something real?</em>
+            Building something?<br /><em style={{ color: 'var(--g)' }}>Let&apos;s talk.</em>
           </h2>
           <p style={{ fontSize: 15, fontWeight: 300, color: 'rgba(244,240,234,.42)', marginBottom: 44, lineHeight: 1.65, maxWidth: 480, margin: '0 auto 44px' }}>
-            Web3 founder who needs traction. Product team planning a launch. A firm that needs a marketer who actually understands crypto.
+            Whether you need a builder who markets or a marketer who ships — I&apos;m in.
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/connect" className="btn-outline">Let&apos;s Talk</Link>
-            <Link href="/work" className="btn-ghost">See the Work</Link>
+            <Link href="/connect" className="btn-outline">Get in Touch</Link>
+            <Link href="/blog" className="btn-ghost">Read the Notebook</Link>
           </div>
         </div>
       </section>
