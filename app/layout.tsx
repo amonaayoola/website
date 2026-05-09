@@ -4,8 +4,11 @@ import Nav from "@/components/Nav";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Amona Ayoola | Web3 Marketer & GTM Strategist",
-  description: "Web3 marketer and go-to-market strategist. Grew a client's X account from 30K to 120K in 90 days. Organic only.",
+  title: "Amona Ayoola | Builder & Product Marketer",
+  description: "CMO at Nirvana Academy. Building Myndzprint and Raxus. Product marketer who ships.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

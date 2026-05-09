@@ -2,40 +2,34 @@ import Link from 'next/link'
 
 const experience = [
   {
+    role: 'Chief Marketing Officer',
+    company: 'Nirvana Academy',
+    period: '2023 – Present',
+    desc: 'CMO at one of the most active Web3 education platforms. Leading brand, growth, community, and content. Started selling out events through direct outreach; now running the full marketing operation.',
+  },
+  {
     role: 'Founder',
     company: 'Myndzprint',
-    period: '2024 – Present',
-    desc: 'Building an AI minds platform that lets you have conversations with any thinker — historical figures, domain experts, or yourself. Doing the product, the GTM, and the community simultaneously.',
+    period: '2026 – Present',
+    desc: 'Building an AI minds platform that lets you have conversations with any thinker: historical figures, domain experts, or yourself. Doing the product, the GTM, and the community simultaneously.',
   },
   {
     role: 'Founder',
     company: 'Raxus',
-    period: '2025 – Present',
+    period: '2024 – Present',
     desc: 'Building a real estate product for the Nigerian market. Early stage. The problem is clear; the product is in motion.',
   },
   {
     role: 'Product Marketing Lead',
     company: 'Decane Wallet',
     period: '2025 – Present',
-    desc: 'Full GTM architecture for a non-custodial Web3 wallet. Brand strategy, pre-launch sprint, trader outreach playbook, and launch execution. Not the founder — but I ship like one.',
+    desc: 'Full GTM architecture for a non-custodial Web3 wallet. Brand strategy, pre-launch sprint, trader outreach playbook, and launch execution. Not the founder, but I ship like one.',
   },
   {
     role: 'Founder & GTM Lead',
     company: 'Ri-Mark',
-    period: '2022 – 2024',
+    period: '2022 – 2026',
     desc: 'Founded and grew a Web3 marketing agency to ~$200K revenue over two years. Built GTM systems for Web3 founders, grew client X accounts (30K→120K in 90 days, 50K→150K+), and ran community and content operations. No paid acquisition.',
-  },
-  {
-    role: 'Event Marketing & Sales',
-    company: 'Nirvana Academy',
-    period: '2023',
-    desc: 'Sold out two paid Web3 events through direct outreach alone. DMs, calls, follow-ups — zero ad spend. Personal outreach to over 1,000 prospects.',
-  },
-  {
-    role: 'Founder',
-    company: 'ZeroPulse',
-    period: '2024 – Present',
-    desc: 'Web3-native marketing consultancy focused on zero-budget GTM. Built for founders who need traction before they have the budget to buy it.',
   },
   {
     role: 'Content Creator',
@@ -56,14 +50,14 @@ export default function AboutPage() {
     <>
       {/* HERO */}
       <section style={{
-        padding: '140px 44px 80px',
+        padding: '100px 44px 52px',
         background: 'linear-gradient(160deg,#0d0a06,#141008 40%,#0a0806)',
         position: 'relative', overflow: 'hidden', borderBottom: '1px solid rgba(244,240,234,.06)',
       }}>
         <div className="grain" />
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 20% 60%,rgba(200,168,130,.06),transparent 55%)' }} />
         <div style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 20 }}>Chapter 04 / The Person</div>
+          <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 20 }}>Chapter 05 / The Person</div>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: 'clamp(44px,7vw,96px)', fontWeight: 900, lineHeight: .88,
@@ -72,7 +66,7 @@ export default function AboutPage() {
             Amona<br /><em style={{ color: 'var(--g)', fontStyle: 'italic' }}>Ayoola.</em>
           </h1>
           <p style={{ fontSize: 16, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.5)', maxWidth: 560 }}>
-            Builder and product marketer. I build products, run GTM, and write about what I learn doing both.
+            CMO at Nirvana Academy. Builder and product marketer. I run marketing, build products, and write about what I learn doing both.
           </p>
         </div>
       </section>
@@ -80,7 +74,7 @@ export default function AboutPage() {
       {/* BIO + STATS */}
       <section style={{
         background: 'linear-gradient(150deg,#0f0d09,#1a1610 45%,#0a0806)',
-        padding: '100px 44px', position: 'relative', overflow: 'hidden',
+        padding: '60px 44px', position: 'relative', overflow: 'hidden',
       }}>
         <div className="grain" />
         <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', position: 'relative', zIndex: 2 }}>
@@ -92,7 +86,7 @@ export default function AboutPage() {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(10,8,6,.65) 0%,transparent 45%)', pointerEvents: 'none' }} />
             <div style={{ position: 'absolute', bottom: 24, left: 24 }}>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: 'var(--fg)', letterSpacing: '-.02em' }}>Amona Ayoola</div>
-              <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginTop: 4 }}>Builder · Product Marketer · Writer</div>
+              <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginTop: 4 }}>CMO, Nirvana Academy · Builder · Writer</div>
             </div>
           </div>
 
@@ -103,13 +97,13 @@ export default function AboutPage() {
               fontSize: 'clamp(26px,3.5vw,48px)', fontWeight: 700,
               letterSpacing: '-.03em', lineHeight: 1.02, marginBottom: 26, color: 'var(--fg)',
             }}>
-              I build products.<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>I market them too.</em>
+              CMO. Founder.<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>Builder.</em>
             </h2>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              I&apos;m Amona Ayoola — builder, product marketer, and writer. I&apos;ve spent six years inside Web3: building products, running GTM from zero, and writing about what actually happens behind the scenes.
+              I&apos;m Amona Ayoola. CMO at Nirvana Academy, founder, and writer. Six years inside Web3: running marketing at scale, building products from scratch, and writing about what actually happens behind the scenes.
             </p>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: 'rgba(244,240,234,.48)', marginBottom: 14 }}>
-              Currently building <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Myndzprint</strong> (AI minds platform) and <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Raxus</strong> (real estate, Nigeria). Leading GTM for <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Decane Wallet</strong>. I write about the decisions and the failures — not the highlight reel.
+              Currently building <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Myndzprint</strong> (AI minds platform) and <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Raxus</strong> (real estate, Nigeria). Leading GTM for <strong style={{ color: 'var(--fg)', fontWeight: 500 }}>Decane Wallet</strong>. I write about the decisions and the failures. Not the highlight reel.
             </p>
             <div style={{ marginTop: 26 }}>
               {/* Testimonial row */}
@@ -117,7 +111,7 @@ export default function AboutPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/testimonial-photo.jpg" alt="" style={{ width: 68, height: 68, objectFit: 'cover', objectPosition: 'center 20%', borderRadius: '50%', border: '1px solid rgba(200,168,130,.3)', flexShrink: 0 }} />
                 <p style={{ fontSize: 13, fontWeight: 300, color: 'rgba(244,240,234,.38)', fontStyle: 'italic', lineHeight: 1.5 }}>
-                  &ldquo;Amona doesn&apos;t just talk strategy — she executes. <strong style={{ color: 'var(--g)', fontStyle: 'normal', fontWeight: 500 }}>Results speak.</strong>&rdquo;
+                  &ldquo;Amona doesn&apos;t just talk strategy. He executes. <strong style={{ color: 'var(--g)', fontStyle: 'normal', fontWeight: 500 }}>Results speak.</strong>&rdquo;
                 </p>
               </div>
             </div>
@@ -160,27 +154,27 @@ export default function AboutPage() {
       {/* EXPERIENCE */}
       <section style={{
         background: 'linear-gradient(150deg,#0f0d09,#1a1610 45%,#0a0806)',
-        padding: '80px 44px 120px', position: 'relative', overflow: 'hidden',
+        padding: '52px 44px 80px', position: 'relative', overflow: 'hidden',
       }}>
         <div className="grain" />
         <div style={{ position: 'relative', zIndex: 2 }}>
           <div className="section-tag">
             <div className="section-tag-line" />
-            <div className="section-tag-text">Chapter 04.5 / Experience</div>
+            <div className="section-tag-text">Chapter 05.5 / Experience</div>
           </div>
-          <div style={{ maxWidth: 700 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
             {experience.map((e, i) => (
               <div key={e.company + i} style={{
-                display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 40,
-                padding: '36px 0', borderTop: '1px solid rgba(244,240,234,.08)',
-                borderBottom: i === experience.length - 1 ? '1px solid rgba(244,240,234,.08)' : 'none',
+                padding: '32px 28px',
+                border: '1px solid rgba(244,240,234,.07)',
+                background: 'rgba(14,10,7,.6)',
+                position: 'relative',
               }}>
-                <div>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, fontWeight: 700, color: 'var(--fg)', marginBottom: 4 }}>{e.company}</div>
-                  <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 8 }}>{e.role}</div>
-                  <div style={{ fontSize: 11, color: 'rgba(244,240,234,.3)', letterSpacing: '.04em' }}>{e.period}</div>
-                </div>
-                <div style={{ fontSize: 14, fontWeight: 300, lineHeight: 1.75, color: 'rgba(244,240,234,.44)' }}>{e.desc}</div>
+                <div style={{ width: '100%', height: 1, background: 'linear-gradient(to right,var(--g),transparent)', position: 'absolute', top: 0, left: 0, opacity: .4 }} />
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: 'var(--fg)', marginBottom: 4 }}>{e.company}</div>
+                <div style={{ fontSize: 10, color: 'var(--g)', letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: 6 }}>{e.role}</div>
+                <div style={{ fontSize: 10, color: 'rgba(244,240,234,.28)', letterSpacing: '.04em', marginBottom: 16 }}>{e.period}</div>
+                <div style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.75, color: 'rgba(244,240,234,.44)' }}>{e.desc}</div>
               </div>
             ))}
           </div>

@@ -35,9 +35,9 @@ export default function ConnectPage() {
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 28, marginBottom: 40, flexWrap: 'wrap' }}>
             {[
-              { label: 'Twitter / X', href: 'https://twitter.com/amonaayoola' },
+              { label: 'Twitter / X', href: 'https://x.com/noahthedivine' },
               { label: 'LinkedIn', href: 'https://linkedin.com/in/amonaayoola' },
-              { label: 'Email', href: 'mailto:hello@amonaayoola.com' },
+              { label: 'Email', href: 'mailto:amonaayoola@gmail.com' },
             ].map(l => (
               <a key={l.label} href={l.href} target="_blank" rel="noopener" style={{
                 fontSize: 13, color: 'rgba(244,240,234,.34)',
@@ -48,7 +48,7 @@ export default function ConnectPage() {
               </a>
             ))}
           </div>
-          <a href="mailto:hello@amonaayoola.com" className="btn-outline">
+          <a href="mailto:amonaayoola@gmail.com" className="btn-outline">
             Send a Message
           </a>
         </div>
