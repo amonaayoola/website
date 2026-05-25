@@ -43,7 +43,7 @@ export default function DecentralizedOpinionsPage() {
           </div>
           <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap', marginTop: 40 }}>
             {[
-              { label: 'Hosts', val: 'Noah & OhJay' },
+              { label: 'Hosts', val: 'Me & OhJay' },
               { label: 'Format', val: 'Podcast + Video' },
               { label: 'Focus', val: 'Nigeria & Africa' },
               { label: 'Sub-show', val: 'Table Manners' },
@@ -64,25 +64,25 @@ export default function DecentralizedOpinionsPage() {
           <Body>Crypto was moving. Money was moving. People were building real things, making real income, changing their lives inside this space. And on the other side of that wall, millions of young people, especially in Nigeria, especially across Africa, were watching it happen with no idea how to get in.</Body>
           <Body>Not because they were not smart enough. Not because the opportunity was not real. But because nobody was talking to them in a way that made sense.</Body>
           <Body>Most crypto content is made by insiders, for insiders. It assumes you already know the language. It jumps straight into the technical details, the jargon, the metrics. It talks to people who are already in and leaves everyone else feeling like the door is closed.</Body>
-          <Pull>We know what it feels like to be on the outside of something and not know how to walk in. We know how much one real conversation with someone who has done it can change everything.</Pull>
+          <Pull>I know what it feels like to be on the outside of something and not know how to walk in. I know how much one real conversation with someone who has done it can change everything.</Pull>
           <Body>That is what Decentralized Opinions is.</Body>
         </Section>
 
         <Section num="02" title={<>Not a lecture.<br />A <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>door.</em></>}>
-          <Body>Decentralized Opinions is a podcast and video show. But the way we think about it, it is a door.</Body>
-          <Body>We bring the everyday person into the Web3 space, not through tutorials, not through technical explainers, but through the lived stories of the people already inside it. The founders who built something from nothing. The creators who figured out how to turn their presence into income. The builders who saw an opportunity in Africa that the rest of the world had not found yet.</Body>
-          <Body>We sit them down and we let them talk. Their come-up. Their failures. The things that broke. The moments they almost quit. The processes and systems they built. The strategies that worked and the ones that cost them.</Body>
+          <Body>Decentralized Opinions is a podcast and video show. But the way I think about it, it is a door.</Body>
+          <Body>OhJay and I bring the everyday person into the Web3 space, not through tutorials, not through technical explainers, but through the lived stories of the people already inside it. The founders who built something from nothing. The creators who figured out how to turn their presence into income. The builders who saw an opportunity in Africa that the rest of the world had not found yet.</Body>
+          <Body>We sit them down and let them talk. Their come-up. Their failures. The things that broke. The moments they almost quit. The processes and systems they built. The strategies that worked and the ones that cost them.</Body>
           <Pull>A chart does not change someone&apos;s mind. Seeing a real person who looks like you, who came from where you came from, who had the same doubts, and who made it work anyway, that is what changes someone&apos;s mind.</Pull>
           <Body>We also sit down with the founders and teams building the products shaping the African and Nigerian Web3 ecosystem. Nigeria has some of the most innovative builders on the continent. They deserve a platform that takes them seriously and an audience that actually wants to hear what they are building.</Body>
         </Section>
 
-        <Section num="03" title={<>Why Noah and OhJay<br />built this <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>together.</em></>}>
-          <Body>OhJay is the Creative Director of Decentralized Opinions and the founder of BH Labs. He handles the production, the post-production editing, and the creative direction that gives the show its identity. Noah handles the content strategy, the marketing angle, and the on-chain perspective.</Body>
+        <Section num="03" title={<>Why OhJay and I<br />built this <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>together.</em></>}>
+          <Body>OhJay is the Creative Director of Decentralized Opinions and the founder of BH Labs. He handles the production, the post-production editing, and the creative direction that gives the show its identity. I handle the content strategy, the marketing angle, and the on-chain perspective.</Body>
           <Body>Together we bring something a solo show never could.</Body>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 2, margin: '36px 0' }}>
             {[
-              { name: 'Noah', role: 'Host & Content Strategist', desc: 'Content strategy, marketing, and the on-chain perspective. The vision behind why the show exists and who it is for.' },
+              { name: 'Me', role: 'Host & Content Strategist', desc: 'Content strategy, marketing, and the on-chain perspective. The vision behind why the show exists and who it is for.' },
               { name: 'OhJay', role: 'Creative Director, BH Labs', desc: 'Production, post-production editing, and the creative identity that makes Decentralized Opinions look and sound like nothing else.' },
             ].map(b => (
               <div key={b.name} style={{ background: 'rgba(14,10,7,.94)', border: '1px solid rgba(244,240,234,.07)', padding: 28 }}>
@@ -97,13 +97,13 @@ export default function DecentralizedOpinionsPage() {
         </Section>
 
         <Section num="04" title={<>What makes this<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>different.</em></>}>
-          <Body>There are a lot of crypto podcasts. We want to be honest about that.</Body>
-          <Body>But most of them are not doing what we are doing. Most of them are market commentary. Most of them are technical explainers. Most of them are made for people who are already deep in the space. We are not competing with those shows. We are filling a different space entirely.</Body>
+          <Body>There are a lot of crypto podcasts. I want to be honest about that.</Body>
+          <Body>But most of them are not doing what OhJay and I are doing. Most of them are market commentary. Most of them are technical explainers. Most of them are made for people who are already deep in the space. We are not competing with those shows. We are filling a different space entirely.</Body>
 
           <div style={{ margin: '36px 0' }}>
             {[
               { label: 'What they do', desc: 'Market commentary, price predictions, technical explainers. Content for people already inside the space.' },
-              { label: 'What we do', desc: 'Lived stories, full journeys, real failures. Content that makes someone on the outside feel like the door is open for them too.' },
+              { label: 'What we do', desc: 'Lived stories, full journeys, real failures. Content that makes someone on the outside feel like the door is open for them too. That is the gap OhJay and I are filling.' },
             ].map(p => (
               <div key={p.label} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: 24, padding: '28px 0', borderTop: '1px solid rgba(244,240,234,.08)' }}>
                 <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--g)', paddingTop: 3 }}>{p.label}</div>
@@ -113,11 +113,11 @@ export default function DecentralizedOpinionsPage() {
             <div style={{ borderTop: '1px solid rgba(244,240,234,.08)' }} />
           </div>
 
-          <Pull>Decentralized Opinions exists at the intersection of storytelling and Web3. We are the show that turns watching into doing.</Pull>
+          <Pull>Decentralized Opinions exists at the intersection of storytelling and Web3. It is the show that turns watching into doing.</Pull>
         </Section>
 
         <Section num="05" title={<>Table Manners.<br /><em style={{ fontStyle: 'italic', color: 'var(--g)' }}>Season one is coming.</em></>}>
-          <Body>Beyond the main show, we are building something completely different from anything being done in the Nigerian Web3 space right now.</Body>
+          <Body>Beyond the main show, OhJay and I are building something completely different from anything being done in the Nigerian Web3 space right now.</Body>
           <Body>The concept is simple. We bring together six to eight of Nigeria&apos;s most influential Web3 creators, founders, and builders. We put them at one table. We give them a full Nigerian fine dining experience prepared by a private chef. And we let the conversation run.</Body>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 2, margin: '32px 0' }}>
@@ -157,12 +157,12 @@ export default function DecentralizedOpinionsPage() {
         </Section>
 
         <Section num="07" title={<>The goal is not<br />the biggest. It&apos;s the <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>most trusted.</em></>}>
-          <Body>We want Decentralized Opinions to become the most trusted Web3 media brand in Africa. Not the biggest. The most trusted.</Body>
-          <Body>There is a difference. The biggest show gets numbers. The most trusted show changes what people do. And what we are building is a show that changes what people do.</Body>
+          <Body>I want Decentralized Opinions to become the most trusted Web3 media brand in Africa. Not the biggest. The most trusted.</Body>
+          <Body>There is a difference. The biggest show gets numbers. The most trusted show changes what people do. And what OhJay and I are building is a show that changes what people do.</Body>
 
           <div style={{ margin: '36px 0' }}>
             {[
-              { phase: 'Near term', title: 'Table Manners Season One drops', desc: 'Establishes the format. The main show grows through the stories we tell. We build a community entering the space because of what they saw on DO.' },
+              { phase: 'Near term', title: 'Table Manners Season One drops', desc: 'Establishes the format. The main show grows through the stories I tell. I want to build a community that enters the space because of what they saw on DO.' },
               { phase: 'Medium term', title: 'Pan-African expansion', desc: 'Beyond Nigeria to the rest of the continent. The same audience exists. The same gap is waiting to be filled.' },
               { phase: 'Long term', title: 'The reference point', desc: 'DO becomes the show that a generation points to when someone asks them how they found out about Web3. Not just content. A reference point for how a generation entered a new economy.' },
             ].map(p => (
@@ -177,7 +177,7 @@ export default function DecentralizedOpinionsPage() {
             <div style={{ borderTop: '1px solid rgba(244,240,234,.08)' }} />
           </div>
 
-          <Pull>Decentralized Opinions. Where the everyday person meets crypto. Hosted by Noah and OhJay.</Pull>
+          <Pull>Decentralized Opinions. Where the everyday person meets crypto. Hosted by me and OhJay.</Pull>
         </Section>
 
         {/* Author */}
@@ -185,7 +185,7 @@ export default function DecentralizedOpinionsPage() {
           <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, fontWeight: 700, color: 'var(--fg)', marginBottom: 4 }}>Amona Ayoola</div>
           <div style={{ fontSize: 11, color: 'var(--g)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>Host, Decentralized Opinions</div>
           <div style={{ fontSize: 14, color: 'rgba(244,240,234,.36)', fontWeight: 300, lineHeight: 1.65 }}>
-            Co-host with OhJay. Building the show that brings the everyday person into Web3.
+Co-hosting Decentralized Opinions with OhJay. Building the show that brings the everyday person into Web3.
           </div>
         </div>
 
