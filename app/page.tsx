@@ -102,11 +102,11 @@ Builder · Product Marketer · Writer
             fontSize: 15, fontWeight: 300, lineHeight: 1.68, color: 'rgba(244,240,234,.5)',
             marginBottom: 32, maxWidth: 380, animation: 'fu .7s .58s both',
           }}>
-            Building Myndzprint and Raxus. Running GTM for Decane Wallet. Writing about the decisions, the failures, and what actually works.
+            Building Myndzprint. Running marketing for Nirvana Academy. Writing about the decisions, the failures, and what actually works.
           </p>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', animation: 'fu .7s .68s both' }}>
             <Link href="/work" className="btn-primary">See What I&apos;m Building</Link>
-            <a href="#podcast" className="btn-ghost">Dec Opinions — Podcast</a>
+            <a href="#podcast" className="btn-ghost">Decentralized Opinions Podcast</a>
             <Link href="/blog" className="btn-ghost">Read the Notebook</Link>
           </div>
         </div>
@@ -205,7 +205,7 @@ Builder · Product Marketer · Writer
         <div className="grain" />
         <div style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center', gap: 52, flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 300px' }}>
-            <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 16 }}>Chapter 04 / Now Airing &mdash; Podcast</div>
+            <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--g)', marginBottom: 16 }}>Chapter 04 / Now Airing: Podcast</div>
             <h2 style={{
               fontFamily: "'Playfair Display', serif",
               fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900,

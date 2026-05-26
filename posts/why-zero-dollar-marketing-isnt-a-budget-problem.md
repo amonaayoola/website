@@ -10,7 +10,7 @@ Most people treat zero-budget marketing as a constraint. It isn't. It's a comple
 
 Every founder I talk to frames zero-budget marketing the same way: "We don't have money for ads yet, so we're doing organic." That sentence reveals everything wrong with how most people approach this.
 
-Zero-dollar marketing isn't what you do when you can't afford the real thing. **It is the real thing** — for the right product, at the right stage, with the right discipline. The problem is that most people who attempt it are trying to get the results of paid acquisition through organic channels, which is like trying to drive a nail with a screwdriver. Different tools. Different mechanics. Different outcomes.
+Zero-dollar marketing isn't what you do when you can't afford the real thing. **It is the real thing** for the right product, at the right stage, with the right discipline. The problem is that most people who attempt it are trying to get the results of paid acquisition through organic channels, which is like trying to drive a nail with a screwdriver. Different tools. Different mechanics. Different outcomes.
 
 > When you can't buy attention, you have to earn it. That changes everything about how you think about messaging, timing, and what "results" even means.
 
@@ -20,7 +20,7 @@ Paid marketing is forgiving. You can have mediocre positioning, a weak hook, and
 
 Zero-dollar marketing has no forgiveness. **If your message isn't precise, nobody shares it. If your timing is off, nobody sees it. If you don't understand the community you're entering, they ignore you at best and resent you at worst.** The feedback loop is slower but much deeper. You learn what people actually believe, what language they use, and what would genuinely change their behavior.
 
-That depth of understanding is the discipline — and it's exactly what most marketers skip because it feels slow. It isn't slow. It's foundational.
+That depth of understanding is the discipline and it's exactly what most marketers skip because it feels slow. It isn't slow. It's foundational.
 
 ## What Zero-Dollar Marketing *Actually* Requires
 
@@ -44,6 +44,6 @@ I've run zero-budget GTM campaigns that generated $150K in revenue and grew an a
 
 ## The Right Way to Think About It
 
-Stop thinking about zero-dollar marketing as a budget constraint. Start thinking about it as a different operating model — one that trades money for depth of understanding, volume for precision, and short-term spikes for long-term community ownership.
+Stop thinking about zero-dollar marketing as a budget constraint. Start thinking about it as a different operating model one that trades money for depth of understanding, volume for precision, and short-term spikes for long-term community ownership.
 
 **That's not a consolation prize for not having a budget. That's a competitive advantage.**

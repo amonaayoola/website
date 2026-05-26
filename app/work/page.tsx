@@ -33,7 +33,7 @@ const marketing = [
     badge: 'CMO',
     badgeLive: true,
     title: 'Nirvana Academy',
-    desc: 'One of the most active Web3 education platforms. Brand, growth, community, events, and content — running the full marketing operation.',
+    desc: 'One of the most active Web3 education platforms. Brand, growth, community, events, and content. Running the full marketing operation.',
     role: 'CMO since 2023. Grew from selling out events through direct outreach to leading the entire marketing function.',
     tags: ['Web3 Education', 'CMO', 'Community', 'Growth', 'Events'],
     link: null,

@@ -28,11 +28,11 @@ The tagline, in my head, has always been the same: *the health app that pays you
 
 ## What It Would Actually Look Like in Practice
 
-Picture a woman living with Type 2 diabetes. She's been managing her condition for eleven years. She checks her blood sugar four times a day, has been through three medications, two dietary overhauls, and one clinical trial. Her health journey is a dataset that pharmaceutical researchers would pay significantly for — the kind of long-term, real-world evidence that is genuinely hard to come by.
+Picture a woman living with Type 2 diabetes. She's been managing her condition for eleven years. She checks her blood sugar four times a day, has been through three medications, two dietary overhauls, and one clinical trial. Her health journey is a dataset that pharmaceutical researchers would pay significantly for the kind of long-term, real-world evidence that is genuinely hard to come by.
 
 Under the current system, her hospital sells that data, anonymized in name though often identifiable in practice, and she sees none of the proceeds. Under MedVault, she licenses it on her own terms. She earns $20 one month, $60 the next. It's not life-changing money in every case. But it is her money, from her data, given with her consent.
 
-Scale that across millions of patients — chronic conditions, genomic data, mental health histories, rare disease profiles — and you begin to see not just a product, but a new economic model for healthcare data entirely.
+Scale that across millions of patients chronic conditions, genomic data, mental health histories, rare disease profiles and you begin to see not just a product, but a new economic model for healthcare data entirely.
 
 ## Why the Idea Matters Beyond the Money
 
@@ -42,7 +42,7 @@ Patients who feel ownership over their health data are more likely to track it c
 
 ## The Market Already Knows This Is Coming
 
-Every major tech company is positioning for this space. Apple Health Records. Google Health. Amazon Clinic. They're all building infrastructure to hold health data at scale. The question isn't whether health data will be centralized — it will be. The question is who controls it.
+Every major tech company is positioning for this space. Apple Health Records. Google Health. Amazon Clinic. They're all building infrastructure to hold health data at scale. The question isn't whether health data will be centralized it will be. The question is who controls it.
 
 MedVault is a bet that the answer should be the patient. Not as a regulatory requirement. As a product decision. Because if you give patients genuine control, the quality, depth, and consent clarity of the data you collect is categorically better than anything scraped or purchased.
 
