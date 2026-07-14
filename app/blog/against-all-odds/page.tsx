@@ -31,13 +31,13 @@ export default function AgainstAllOddsPage() {
             letterSpacing: '-.04em', color: 'var(--fg)', marginBottom: 32, maxWidth: 740,
           }}>
             Against All Odds,<br />I Am Still{' '}
-            <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>Aiming.</em>
+            <em style={{ fontStyle: 'italic', color: 'var(--g)' }}>Aiming for Greatness.</em>
           </h1>
           <div style={{
             fontSize: 18, fontWeight: 300, lineHeight: 1.72, color: 'rgba(244,240,234,.5)',
             maxWidth: 560, borderLeft: '2px solid var(--g)', paddingLeft: 24,
           }}>
-            Nothing is working. Literally nothing. And I am still aiming for greatness.
+            The season is harder than expected. I am still aiming.
           </div>
         </div>
       </section>
